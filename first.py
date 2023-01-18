@@ -1,0 +1,6 @@
+print("hello every body")
+print("welcome to our python class")
+print("this is our first python program")
+print('we are going to calculate sum of 1 and 2')
+print('sum of 1 and two is equal to :')
+print(1+2)
