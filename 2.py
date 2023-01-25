@@ -46,21 +46,21 @@ print(result)
 
 # res = 1 + 'ali' # TypeError
 
-print('#'*5)
+# print('#'*5)
 # print('#'*'#')  # TypeError
 
-n = 'c'
-print(type(n))
-x = 'ccccc'
-print(type(x))
+# n = 'c'
+# print(type(n))
+# x = 'ccccc'
+# print(type(x))
 # - and / are not defined on str
-name = "pendar"
-print(name[0])
-print(name[1])
-print(name[2])
-print(name[3])
-print(name[4])
-print(name[5])
+# name = "pendar"
+# print(name[0])
+# print(name[1])
+# print(name[2])
+# print(name[3])
+# print(name[4])
+# print(name[5])
 
 
 # exercise 1 : output : a b c d e f g h
