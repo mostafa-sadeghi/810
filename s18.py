@@ -47,3 +47,32 @@
 # یک برنامه بنویسید که یک عدد پنج رقمی را از ورودی دریافت نماید و مجموع ارقام آن را محاسبه و نمایش دهد.
 # یک برنامه بنویسید که یک عدد پنج رقمی را از ورودی دریافت نماید و مجموع ارقام زوج آن را محاسبه و نمایش دهد.
 # یک برنامه بنویسید که یک عدد پنج رقمی را از ورودی دریافت نماید و مجموع ارقام فرد آن را محاسبه و نمایش دهد.
+
+# result = 0
+# number = input('enter a number:> ')
+# for n in number:
+#     result += int(n) # result = result + int(n)
+
+# print(result)
+sum_of_even_digits = 0
+sum_of_odd_digits = 0
+number = input('enter a number:> ')
+for n in number:
+    if int(n) % 2 == 0:
+        # sum_of_even_digits = sum_of_even_digits + int(n)
+#         sum_of_even_digits += int(n)
+#     else:
+#         sum_of_odd_digits += int(n)
+
+# print("sum of even numbers :", sum_of_even_digits)
+# print("sum of odd numbers :", sum_of_odd_digits)
+
+
+# exercise 1:
+# draw flowchart and write the python code of this alorithm:
+# 1. take n from input
+# 2. m = n % 10
+# 3. print m
+# 4. n = n // 10
+# 5 . if   n!= 0 goto step 2, else: goto step 6
+# 6. end
