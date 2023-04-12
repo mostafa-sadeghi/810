@@ -104,7 +104,49 @@
 برنامه امکان اضافه کردن
 حذف کردن و ویرایش اطلاعات دانش آموزان را دارد
 همینطور امکان نمایش لیست تمام اطلاعات دانش آموزان مدرسه را دارد
-
-
-
 '''
+
+all_students = []
+while True:
+    print('''Students registration software
+    to add  student -> 1,
+    to show all students -> 2,
+    to delete a student -> 3
+    to exit -> 0
+    ''')
+    user_selection = input('> ')
+    if user_selection == '0':
+        print("Thank you for joining us...")
+        exit()
+    elif user_selection == '1':
+        student = {}
+        name = input('enter student`s name: ')
+        age = int(input('enter student`s age: '))
+        student['name'] = name
+        student['age']= age
+        all_students.append(student)
+        print(f'{name} added...')
+        input('press enter to continue... ')
+
+    elif user_selection == '2':
+        print("all students", all_students)
+        input('press enter to continue... ')
+    elif user_selection == '3':
+        print('delete ...')
+        name = input('enter student`s name: ')
+        for i in range(len(all_students)):
+            if name == all_students[i]['name']:
+                confirm = input(f'you are deleting {name}.Are you sure? (yes or no)')
+                if confirm.lower().startswith('y'):
+                    del all_students[i]
+                    print(f'{name} was deleted...')
+                    input('press enter to continue... ')
+                    break
+                else:
+                    break
+
+
+
+
+
+
